@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open-sans', sans-serif;
+    font-size: 20px;
+    background-color: #8052ec;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 60px;
+    width: 200px;
+    border-radius: 40px;
+    font-size: inherit;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a7dff;
+}
+
