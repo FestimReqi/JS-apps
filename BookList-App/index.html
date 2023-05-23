@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Examples</title>
+    <style>
+        .delete {
+            width: 33px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container font-monospace">
+    <div class="row py-4 bg-light rounded-bottom mb-5">
+        <div class="col col-12 col-sm-6">
+            <h1 class="text-center display-6">
+                <i class="fas fa-book-open"></i>MyBookList
+            </h1>
+        </div>
+        <div class="col col-12 col-sm-5 ms-auto">
+            <input type="text" class="form-control" placeholder="Search books..." id="filterInput">
+        </div>
+    </div>
+
+    <form class="w-50 mx-auto mb-5" id="book-form">
+        <label for="title">Title</label>
+        <input type="text" class="form-control mb-3" id="title">
+        <label for="author">Author</label>
+        <input type="text" class="form-control mb-3" id="author">
+        <label for="isbn">ISBN#</label>
+        <input type="text" class="form-control mb-3" id="isbn">
+        <input type="submit" value="Add Book" class="btn btn-primary w-100">
+    </form>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN#</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody id="book-list">
+
+        </tbody>
+    </table>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
